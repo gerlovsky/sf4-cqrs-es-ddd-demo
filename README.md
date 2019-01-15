@@ -5,7 +5,7 @@
 * [Aggregate, Entity, Domain Events, Value Object, Repository][1]
 * Layered and Hexagonal Architecture
 
-**Дисклеймер**
+## Дисклеймер
 Проект находится в разработке.
 
 
