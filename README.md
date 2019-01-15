@@ -6,7 +6,7 @@
 * Layered and Hexagonal Architecture
 
 ## Дисклеймер
-Проект находится в разработке.
+🛠Проект находится в процессе разработки.
 
 
 [1]: https://en.wikipedia.org/wiki/Domain-driven_design#Building_blocks
