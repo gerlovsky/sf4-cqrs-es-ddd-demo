@@ -7,21 +7,27 @@ parameters:
     locale: 'en'
 
 services:
+#    command.project.create:
+#        class: AppBundle\SimpleBus\Project\Handler\CreateProjectCommandHandler
+#        tags: [{ name: command_handler, handles: AppBundle\SimpleBus\Projects\CreateProjectCommand }]
+#        arguments: [ "@validator", "@doctrine" ]
+
+    todo.factory:
+        class: Todolist\Domain\Factory\TodoFactory
+        autowire: true
+
+    command.todo.add:
+        class: Todolist\Application\Command\AddTodoCommand
+
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
-    # makes classes in src/ available to be used as services
-    # this creates a service per class whose id is the fully-qualified class name
-    App\:
-        resource: '../src/*'
-        exclude: '../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}'
-
     # controllers are imported separately to make sure services can be injected
     # as action arguments even if you don't extend any base controller class
-    App\Controller\:
-        resource: '../src/Controller'
+    Todolist\UI\Http\Controller\:
+        resource: '../src/Todolist/UI/Http/Controller'
         tags: ['controller.service_arguments']
 
     # add more service definitions when explicit configuration is needed
