@@ -6,3 +6,8 @@
 * Layered and Hexagonal Architecture
 
 [1]: https://en.wikipedia.org/wiki/Domain-driven_design#Building_blocks
+
+## TODO:
+* Сделать API Bundle
+* Доработать до рабочей версии backend
+* Разработать Front-end на ReactJS
