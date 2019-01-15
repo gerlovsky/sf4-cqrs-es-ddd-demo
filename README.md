@@ -5,6 +5,10 @@
 * [Aggregate, Entity, Domain Events, Value Object, Repository][1]
 * Layered and Hexagonal Architecture
 
+**Дисклеймер**
+Проект находится в разработке.
+
+
 [1]: https://en.wikipedia.org/wiki/Domain-driven_design#Building_blocks
 
 ## TODO:
